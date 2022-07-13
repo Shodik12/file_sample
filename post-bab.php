@@ -22,10 +22,10 @@
            
 
         if(isset($_POST['submit'])){
-              $bab = $_POST['nama_bab'];
+              $bab = $_POST['bab'];
 
             if($bab != ''){
-                mysqli_query($koneksi, "INSERT INTO bab(nama_bab) VALUES('".$bab."') ");                
+                mysqli_query($koneksi, "INSERT INTO bab(bab) VALUES('".$bab."') ");                
                    header('location: index-bab.php?sukses=tambah');                              
                    
             }
@@ -43,7 +43,7 @@
                             
                             <div class="mb-1">
                                 <label><strong>Isi disini :</strong></label>
-                                <textarea id="textarea" name="nama_bab" class="form-control"></textarea><br>
+                                <textarea id="textarea" name="bab" class="form-control"></textarea><br>
                             </div>
                             <div class="d-flex justify-content-center">
                                 <input type="submit" name="submit" value="Submit" class="btn btn-success">
