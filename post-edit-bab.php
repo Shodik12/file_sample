@@ -42,7 +42,7 @@ while($data = mysqli_fetch_array($query_mysqli)){
                             
                             <div class="mb-1">
                                 <label><strong>Isi disini :</strong></label>
-                                <textarea id="textarea"  name="nama_bab" class="form-control"  value="<?php echo $data['nama_bab']; ?>"><?php echo $data['nama_bab']; ?></textarea><br>
+                                <textarea id="textarea"  name="nama_bab" class="form-control"  value="<?php echo $data['bab']; ?>"><?php echo $data['bab']; ?></textarea><br>
                             </div>
                             <div class="d-flex justify-content-center">
                                 <input type="submit" name="submit" value="Submit" class="btn btn-success">
