@@ -130,14 +130,14 @@
  $keyword = $_POST['search'];
  }
  
- $query = mysqli_query($koneksi,"SELECT * FROM bab WHERE nama_bab LIKE '%".$keyword."%' OR ".$no." LIKE '%".$keyword."%'  ORDER BY id DESC Limit $halaman_awal,$batas");
+ $query = mysqli_query($koneksi,"SELECT * FROM bab WHERE bab LIKE '%".$keyword."%' OR ".$no." LIKE '%".$keyword."%'  ORDER BY id DESC Limit $halaman_awal,$batas");
  $hitung_data = mysqli_num_rows($query);
  if ($hitung_data > 0) {
  while ($data = mysqli_fetch_array($query)) {
  ?>
  <tr>
  <td><?php echo $no++; ?></td> 
- <td class="readmore"><?php  echo $data['nama_bab'];?></td>
+ <td class="readmore"><?php  echo $data['bab'];?></td>
  <td class="align-center"><a class="button is-light" href="index-pasal.php?id=<?php echo $data['id'];?>">detail pasal</a></td>
   <td class="align-center"><a class="button is-light" href="hapus-bab.php?id=<?php echo $data['id'];?>">Hapus</a></td>
   <td class="align-center"><a class="button is-light" href="post-edit-bab.php?id=<?php echo $data['id'];?>">Edit</a></td> 
