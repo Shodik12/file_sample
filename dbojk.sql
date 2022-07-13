@@ -24,10 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bab2`
+-- Table structure for table `bab`
 --
 
-CREATE TABLE `bab2` (
+CREATE TABLE `bab` (
   `id` int(11) NOT NULL,
   `bab` text CHARACTER SET latin1 COLLATE latin1_swedish_nopad_ci NOT NULL,
   `pasal` text CHARACTER SET latin1 COLLATE latin1_swedish_nopad_ci NOT NULL
